@@ -6,7 +6,7 @@
 DataTree it is a way of having many dataframes, or other types of data in one object, that can be accessed using dot notation
 
 ## Example
-When analyzing different health data, one commonly has different dataframes (one for hospital events, another for prescription events) as well as many dataframes or dictionaries that contain the labels for the codes that are used. It might also be useful to have some metadata about a dataframe; for instance source of the codes (url).
+When analyzing different health data it is common to have many dataframes or dictionaries that contain the labels for the codes that are used to describe diagnoses, pharmaceuticals and procedures. It might also be useful to have some metadata about each dataframe; for instance source of the codes (url). The idea to have one object, here labelled codes, with all the other data as sub-frames in a tree structure:
 
 ```python
 # a dataframe of all icd codes and related text.
